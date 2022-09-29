@@ -61,6 +61,13 @@ let rain = true;
 
 //CODE HERE
 
+if (temperature >= 80 && rain) {
+  console.log('wear a tshirt and take an umbrella')
+} else if (temperature >= 60 && temperature <= 80) {
+  console.log('wear a rain jacket')
+} else {
+  console.log('one should wear a jacket and carry an umbrella')
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -82,6 +89,10 @@ for (let i = 0; i < 10; i++) {
 
 //CODE HERE
 
+for (let i = 0; i < 11; i++) {
+  console.log(i)
+}
+
 ////////// PROBLEM 7 //////////
 
 /*
@@ -90,6 +101,9 @@ for (let i = 0; i < 10; i++) {
 
 //CODE HERE
 
+for (let i = 10; i > 0; i -=1) {
+  console.log(i)
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -102,6 +116,13 @@ let passingScore = 7;
 
 //CODE HERE
 
+while ( score < 7) {
+  console.log("your score is not high enough")
+  score += 1
+}
+
+
+
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -113,10 +134,28 @@ let passingScore = 7;
 
 //CODE HERE
 
+var changeMyMind = false
+
+if (changeMyMind === true) {
+  console.log(true)
+} else {
+  changeMyMind = false
+  console.log(changeMyMind)
+}
+
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
 //CODE HERE
+
+var changeMyMind = false
+
+if (changeMyMind != true) {
+  console.log(true)
+} else {
+  changeMyMind = false
+  console.log(changeMyMind)
+}
 
 ////////// ADVANCED PROBLEMS //////////
 
@@ -126,3 +165,11 @@ let z = 5;
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+
+while (z > 0) {
+  for (let i = z; i > 0; i--) {
+    console.log(i)
+  }
+  console.log('-----')
+  z -= 1
+}
